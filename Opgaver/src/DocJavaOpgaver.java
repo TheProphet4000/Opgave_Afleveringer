@@ -1,10 +1,12 @@
 public class DocJavaOpgaver { //Navnet på Class
     public static void main(String[] args) { //void start
-        OpgaveA();
-        OpgaveB();
-        OpgaveC();
+        Opgave1();
+        Opgave2();
+        Opgave3();
+        Opgave4();
+        Opgave5();
     }
-    public static void OpgaveA(){
+    public static void Opgave1(){
 
         //Standard variabler----------------------------------
         int x = 5;
@@ -75,10 +77,10 @@ public class DocJavaOpgaver { //Navnet på Class
         //_________________________________
         System.out.println("__________");
     }
-    public static void OpgaveB (){ //void start
+    public static void Opgave2 (){ //void start
 
-        int x = 10;
-        int y = 10;
+        int x = 41;
+        int y = 67;
 
         System.out.println("Opgave 2");
         if(x+y>100){
@@ -88,7 +90,34 @@ public class DocJavaOpgaver { //Navnet på Class
         }
         System.out.println("----------");
     }
-    public static void OpgaveC(){
+    public static void Opgave3(){
+        int Ko = 47;
+        int Kylling = 21;
+
+        System.out.println("Opgave 3");
+        if(Ko > Kylling){
+            System.out.println("Ko er størst");
+        }else{
+            System.out.println("Kylling er størst");
+        }
+        System.out.println("----------");
+    }
+    public static void Opgave4(){
+        int Ko = 47;
+        int Kylling = 69;
+        int Menneske = 42;
+
+        System.out.println("Opgave 4");
+        if (Ko > Kylling && Ko > Menneske){
+            System.out.println("Ko er størst");
+        } else if (Kylling > Ko && Kylling > Menneske){
+            System.out.println("Kylling er størst");
+        } else if (Menneske > Ko && Menneske > Kylling){
+            System.out.println("Menneske er størst");
+        }
+        System.out.println("----------");
+    }
+    public static void Opgave5(){
 
     }
 }
