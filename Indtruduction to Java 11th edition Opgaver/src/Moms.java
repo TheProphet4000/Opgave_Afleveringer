@@ -12,8 +12,8 @@ public class Moms {
         Scanner input = new Scanner(System.in);
         System.out.print("Indtast det Danske beløb du ønsker at finde moms af (Uden Kr til sidst): ");
 
-        double Købsmængte = input.nextDouble();
-        double Danskmoms = Købsmængte * 0.25;
+        double Koebsmaengte = input.nextDouble();
+        double Danskmoms = Koebsmaengte * 0.25;
 
         System.out.println("Momsen af dit Danske beløb er " + (int)(Danskmoms * 100) / 100.0 + " DKK");
     }
@@ -22,8 +22,8 @@ public class Moms {
         Scanner input = new Scanner(System.in);
         System.out.print("Indtast det Tyske beløb du ønsker at finde moms af (Uden DEM til sidst): ");
 
-        double Købsmængte = input.nextDouble();
-        double Tyskmoms = Købsmængte * 0.16;
+        double Koebsmaengte = input.nextDouble();
+        double Tyskmoms = Koebsmaengte * 0.16;
 
         System.out.println("Momsen af dit Tyske beløb er " + (int)(Tyskmoms * 100) / 100.0 + " DEM");
     }
