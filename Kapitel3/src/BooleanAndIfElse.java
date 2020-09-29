@@ -9,6 +9,7 @@ public class BooleanAndIfElse {
         greaterThen90();
         FixedCode();
         GreaterThen90Part2();
+        FixTheCode();
     }
 
     public static void changePlaces(){
@@ -49,6 +50,36 @@ public class BooleanAndIfElse {
     }
 
     public static void GreaterThen90Part2(){
-        System.out.println("3.4.1: ");
+
+        double score = 1;
+        double payout;
+
+        if (score > 90){
+            double percentage = 3.0;
+            double x = score / 100; //Laver score om til procent
+            double y = x * percentage; // finder total procent
+            payout = score + y; //lægger procenter til bet
+
+            System.out.println("3.4.2: Payout = "+ payout);
+
+        } else {
+            double percentage = 1.0;
+            double x = score / 100; //Laver score om til procent
+            double y = x * percentage; // finder total procent
+            payout = score + y; //lægger procenter til bet
+
+            System.out.println("3.4.2: Payout = "+ payout);
+        }
+    }
+
+    public static void FixTheCode(){
+
+        int score = 80; //Variablen var ikke declared
+        if (score >= 60)  System.out.println("3.5.3: D");
+        else if (score >= 70)  System.out.println("3.5.3: C");
+        else if (score >= 80)  System.out.println("3.5.3: B");
+        else if (score >= 90)  System.out.println("3.5.3: A");
+        else  System.out.println("F");
+        System.out.println("3.5.3: The varible score was not declared");
     }
 }
