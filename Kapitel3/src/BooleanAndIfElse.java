@@ -9,6 +9,7 @@ public class BooleanAndIfElse {
         greaterThen90();
         FixedCode();
         GreaterThen90Part2();
+        WhatHappends();
         FixTheCode();
     }
 
@@ -70,6 +71,18 @@ public class BooleanAndIfElse {
 
             System.out.println("3.4.2: Payout = "+ payout);
         }
+    }
+
+    public static void WhatHappends() {
+
+        byte x = 3;
+        byte y = 3;
+        if (x > 2)if (y > 2) {int z = x + y;
+        System.out.println("z is " + z);
+        }else  System.out.println("x is " + x);
+        System.out.println("3.5.2: x = 2, y = 3: Nothing is printed");
+        System.out.println("3.5.2: x = 3, y = 2: prints x is 3");
+        System.out.println("3.5.2: x = 3, y = 2: prints z is 6");
     }
 
     public static void FixTheCode(){
