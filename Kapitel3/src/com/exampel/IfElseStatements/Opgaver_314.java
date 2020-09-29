@@ -33,6 +33,8 @@ public class Opgaver_314 {
         System.out.print("3.14.4: The random byte is ");
         System.out.print( (x>2) ? x = 1 : -1);
         //Jeg kan ikke få den her til at virke, lige meget hvor meget jeg tester, og ændre.
+        //Fremgangsmåden vil være, at finde et tilfældigt tal, og cast det til en byte 0-9
+        //Herefter retunere 1 hvis tallet er over 5, og -1 hvis tallet er under 6
     }
 
     private static void RewriteIf() {
