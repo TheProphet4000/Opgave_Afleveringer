@@ -20,7 +20,7 @@ public class Opgaver_36 {
         short count = 10;
         boolean newline = false;
 
-        if (count % 10 == 0){
+        if (count % 10 == 0 ){
             newline = true;
             if (newline){
                 System.out.println("3.6.2: " + count + " is a round number");
