@@ -1,4 +1,4 @@
-import java.util.*; //det går hurtigere med Scanner
+import java.util.*; //* er et wildcard, så den tager alle ting i util.
 public class ComputeAreaWithConsoleInput {
     public static void main(String[] args) {
 
