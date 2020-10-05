@@ -1,3 +1,5 @@
+package Div;
+
 public class BasicOpgave { //Navnet på Class
 
     public static int Dyr = 10;

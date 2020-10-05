@@ -1,3 +1,5 @@
+package Div;
+
 public class IfElseSwitch {
     public static void main(String[] args) {
         short x = 2;

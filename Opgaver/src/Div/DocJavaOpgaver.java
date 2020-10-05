@@ -1,3 +1,5 @@
+package Div;
+
 public class DocJavaOpgaver { //Navnet på Class
     public static void main(String[] args) { //void start
         Opgave1();
