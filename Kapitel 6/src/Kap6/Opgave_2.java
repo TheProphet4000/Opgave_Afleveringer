@@ -1,4 +1,6 @@
-public class Opgave62 {
+package Kap6;
+
+public class Opgave_2 {
     public static void main(String[] args) {
         testMetode();
     }
