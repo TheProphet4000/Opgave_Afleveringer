@@ -24,4 +24,5 @@ public class Opgave_12 {
             System.out.println();
         }
     }
+
 }
