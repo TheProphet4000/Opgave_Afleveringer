@@ -2,17 +2,20 @@ public class Car {
 
     private final String car_password;   //final? inellij sagde det var en god ide.
     public float breakAmount;
+    public float newBreakAmount;
 
     public float throttlePosition;
     public float currentRpm;
     public float maxRpm;
 
     public float steeringAngle;
+    public float newAngle;
 
     public double fuelConsumption;
     public double fuel; //1 er fuld tank
 
-    public short gear;
+    public int gear;
+
     public boolean engineOn = false;
     public float engineTempC;
 
@@ -27,12 +30,16 @@ public class Car {
         this.fuelConsumption = 0.1;
         this.maxRpm = 3000;
         this.engineTempC = 15;
-        this.fuel = 1;
-        this.gear = 1;
+        this.fuel = 0;
+        this.gear = 0;
         this.airconOn = false;
         this.lightsOn = false;
         this.steeringAngle = 0; //positive grader er til højer, samt negative er til venstre
         this.breakAmount = 0;
+    } //Bilen er stillestående og slukket
+
+    public void setSteeringAngle(float newAngle){
+        steeringAngle = newAngle;
     }
 
     public void turnEngineOn(CarKey key) {
@@ -64,19 +71,13 @@ public class Car {
         lightsOn = false;
     }
 
-    public void showCarStatus(){
-        System.out.println("The engine is "+engineOn);
-        System.out.println("The engine temperture in C is "+engineTempC);
-        System.out.println("The position of the throttle is "+throttlePosition);
-        System.out.println("Current RPM : "+currentRpm);
-        System.out.println("The lights are "+lightsOn);
-        System.out.println("The airconditioner is "+airconOn);
-    }
+    public void throttlePosition(float newThrottlePosition) {
 
-    public void throttlePosition(float throttlePosition) {
+        throttlePosition = newThrottlePosition;
 
         currentRpm = throttlePosition * 10;
         engineTempC = engineTempC * currentRpm + 10; //ikke realistisk men har ikke nogle kilder, eller bil
+        fuel = fuel-fuelConsumption;
 
         if (currentRpm >= maxRpm){
             currentRpm = maxRpm;
@@ -85,5 +86,20 @@ public class Car {
         if (currentRpm <= 0){
             currentRpm = 0;
         }
+    }
+
+    public void setGear(int newgear){
+        gear = newgear;
+    }
+
+    public void reFuel(double addFuel){
+        fuel = fuel + addFuel;
+        if (fuel > 100){
+            System.out.println("Ohhhh noooo there is fuel everywhere... you pumped to much fuel in the car");
+        }
+    }
+
+    public void breaks (float newBreakAmount){
+        breakAmount = newBreakAmount;
     }
 }

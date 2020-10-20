@@ -19,7 +19,7 @@ class CarTest {
         keyError();
         System.out.println(" ");
 
-        System.out.print("Test 4 (The Car should turn left/right): ");
+        System.out.print("Test 4 (The Car should turn left/right, some degree in either + or -): ");
         testSteering();
         System.out.println(" ");
 
@@ -31,23 +31,51 @@ class CarTest {
         testBreaks();
         System.out.println(" ");
 
-        System.out.print("Test 7 (Current gear should be 0): ");
+        System.out.print("Test 7 (Gear should be 1): ");
         testGears();
         System.out.println(" ");
 
-        System.out.print("Test 8 (The car should NOT have a full tank of 1): ");
-        useFuel();
+        System.out.print("Test 8 (The car should NOT have a full tank of 100): ");
+        checkFuel();
         System.out.println(" ");
 
         System.out.print("Test 9 (The car should be Refueled): ");
         refuel();
         System.out.println(" ");
+
+        System.out.print("Test 10 (Lights and aircon should be on): ");
+        testElectricStuff();
+        System.out.println(" ");
+
+        System.out.print("Test 11 (Light and aircon should be off): ");
+        turnOffElectric();
+        System.out.println(" ");
+
+        System.out.print("Test 12 (The breakes should be 2.0 down): ");
+        testBreaks();
+        System.out.println(" ");
+
     }
 
-    private static void useFuel() {
+    private static void turnOffElectric() {
         Car renault = new Car();
 
-        renault.fuel = renault.fuel - renault.fuelConsumption;
+        renault.turnOffSecurityAndComfort();
+        System.out.print("Airconditioner is "+ renault.airconOn + " and lights are "+ renault.lightsOn);
+        System.out.println(" ");
+    }
+
+    private static void testElectricStuff() {
+        Car renault = new Car();
+
+        renault.turnOnSecurityAndComfort();
+        System.out.print("Airconditioner is "+ renault.airconOn + " and lights are "+ renault.lightsOn);
+        System.out.println(" ");
+    }
+
+    private static void checkFuel() {
+        Car renault = new Car();
+        
         System.out.print("Amount of fuel is "+ renault.fuel);
         System.out.println(" ");
     }
@@ -56,7 +84,7 @@ class CarTest {
         Car renault = new Car();
         CarKey key = new CarKey("pass");
 
-        renault.throttlePosition = 1; //Vroooom! fuld fart
+        renault.throttlePosition(1); //Vrooom
         System.out.print("Throttleposition is "+renault.throttlePosition);
         System.out.println(" ");
     }
@@ -65,7 +93,7 @@ class CarTest {
     private static void testGears() {
         Car renault = new Car();
 
-        renault.gear = 0;
+        renault.setGear(1);
         System.out.print("Current gearconfiguration is "+renault.gear);
         System.out.println(" ");
     }
@@ -73,7 +101,7 @@ class CarTest {
     private static void testBreaks() {
         Car renault = new Car();
 
-        renault.breakAmount = 2;
+        renault.breaks(2);
         System.out.print("The breakes are pushed "+renault.breakAmount+ " down");
         System.out.println(" ");
     }
@@ -81,7 +109,7 @@ class CarTest {
     private static void refuel() {
         Car renault = new Car();
 
-        renault.fuel = 1;
+        renault.reFuel(100);
         System.out.print("Amount of fuel is "+ renault.fuel);
         System.out.println(" ");
     }
@@ -109,9 +137,8 @@ class CarTest {
 
     private static void testSteering() {
         Car renault = new Car();
-        CarKey key = new CarKey("pass");
 
-        renault.steeringAngle = 10; //Drej 10 grader mod højer
+        renault.setSteeringAngle(10);
         System.out.print("Steering angle is "+renault.steeringAngle);
         System.out.println(" ");
     }
