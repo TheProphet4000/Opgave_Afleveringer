@@ -9,8 +9,8 @@ public class Car {
 
     public float steeringAngle;
 
-    public double gasConsumption;
-    public double theTank;
+    public double fuelConsumption;
+    public double fuel; //1 er fuld tank
 
     public short gear;
     public boolean engineOn = false;
@@ -24,10 +24,10 @@ public class Car {
         this.engineOn = false;
         this.throttlePosition = 0;
         this.currentRpm = 0;
-        this.gasConsumption = 0.1;
+        this.fuelConsumption = 0.1;
         this.maxRpm = 3000;
         this.engineTempC = 15;
-        this.theTank = 1;
+        this.fuel = 1;
         this.gear = 1;
         this.airconOn = false;
         this.lightsOn = false;
