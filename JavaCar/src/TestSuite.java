@@ -1,3 +1,5 @@
+import java.awt.*;
+
 class CarTest {
 
     public static void main(String[] args) {
@@ -55,13 +57,46 @@ class CarTest {
         testBreaks();
         System.out.println(" ");
 
+        System.out.print("Test 13 (Colour should be ScarletRed): ");
+        TestColour();
+        System.out.println(" ");
+
+        System.out.print("Test 14 (TransmitionType should be Automatic): ");
+        testTransmitionType();
+        System.out.println(" ");
+
+        System.out.print("Test 15 (Company should be Renault): ");
+        testCompany();
+        System.out.println(" ");
+
+    }
+
+    private static void testCompany() {
+        Car renault = new Car();
+
+        System.out.print("The car company of this car is ");
+        System.out.println(" ");
+    }
+
+    private static void testTransmitionType() {
+        Car renault = new Car();
+        TransmitionType type = TransmitionType.Automatic;
+        System.out.print("The Transmition type is "+type);
+        System.out.println(" ");
+    }
+
+    private static void TestColour() {
+        Car renault = new Car();
+        ChasisColour color = ChasisColour.ScarletRed;
+        System.out.print("The colour of this car is " + color);
+        System.out.println(" ");
     }
 
     private static void turnOffElectric() {
         Car renault = new Car();
-
+        Company maker = Company.Corvette;
         renault.turnOffSecurityAndComfort();
-        System.out.print("Airconditioner is "+ renault.airconOn + " and lights are "+ renault.lightsOn);
+        System.out.print("The maker of this car is " + maker); //Hva?
         System.out.println(" ");
     }
 

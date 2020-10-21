@@ -102,4 +102,5 @@ public class Car {
     public void breaks (float newBreakAmount){
         breakAmount = newBreakAmount;
     }
+
 }
