@@ -69,6 +69,14 @@ class CarTest {
         testCompany();
         System.out.println(" ");
 
+        System.out.print("Test 16 (Should make many cars): ");
+        makeManyCars();
+        System.out.println(" ");
+    }
+
+    private static void makeManyCars() {
+        Car productionCode = new Car();
+        productionCode.createCar(1000001); //vi tilføjer 1 fordi den kun laver op til 99999
     }
 
     private static void testCompany() {

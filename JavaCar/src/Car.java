@@ -103,4 +103,18 @@ public class Car {
         breakAmount = newBreakAmount;
     }
 
+    public void createCar (int carAmount){
+        Car[] cars = new Car[carAmount]; //laver en array klasse der indenholder Car med atributter sat på
+
+        for (int i = 1; i < carAmount; i++) { //i er et tal der går op
+            cars[i] = new Car(); //laver en bil med ID som i
+            System.out.println("Dette er bil ved navn og nummer: "+cars[i].toString());
+            System.out.println(i);
+
+            cars[i].reFuel(100); //fylder benzin på alle bilerne
+            System.out.println("Dette er mængten at benzin i denne bil: "+cars[i].fuel);
+            System.out.println(" ");
+        }
+    }
+
 }
