@@ -8,16 +8,16 @@ public class Spawner {
 
     public static void main(String[] args) {
         randomAmount(spawnAmount);
-        spawn(out);
+        spawn();
     }
 
-    private static byte randomAmount(byte spawnAmount) {
+    private static Random randomAmount(byte spawnAmount) {
         Random rand = new Random();
-        byte out = (byte) rand.nextInt(spawnAmount);
-        return(out);
+        return rand; //HADER RANDOM, kan aldrig få det til at virke
+        //Prøvede at spawne et tilfældigt antal køer med 3 maximum spawns
     }
 
-    private static void spawn(byte out) {
-        System.out.println(out + " Cows has spawned");
+    private static void spawn() {
+        System.out.println("1 Cow has spawned");
     }
 }

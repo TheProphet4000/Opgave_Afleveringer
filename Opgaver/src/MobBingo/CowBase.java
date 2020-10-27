@@ -12,16 +12,16 @@ public class CowBase {
     }
 
     private static void movement() {
-    }
-
-    private static void death() {
-        System.out.println("Muuuuuuuuuuuuh");
-        System.out.println("Cow drops some raw beef, leather, and XP");
+        byte move = moveBlocks;
     }
 
     private static void healthHandler() {
         if (health < 1){
             death();
         }
+    }
+    private static void death() {
+        System.out.println("Muuuuuuuuuuuuh");
+        System.out.println("Cow drops some raw beef, leather, and XP");
     }
 }
