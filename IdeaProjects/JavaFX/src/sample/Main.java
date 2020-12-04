@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+
 import java.util.Scanner;
 
 public class Main extends Application {
@@ -18,16 +19,17 @@ public class Main extends Application {
         primaryStage.show();
     }
 
-    public String print(String chatter){
-        return (chatter + "\n");
-    } //retunere text med linjeskift
-
-
     public void main(String[] args) {
         launch(args);
         gameStart();
     }
 
+    @FXML
+    public String print(String chatter) {
+        return (chatter + "\n");
+    } //retunere text med linjeskift
+
+    @FXML
     public void gameStart() {
         System.out.println("--------------------------Game Startet-----------------------------------");
         System.out.println("Hello there my name Romaine, so you wanna play a card game?");
@@ -38,7 +40,7 @@ public class Main extends Application {
     }
 
     @FXML
-    public void showEmotion(){
+    public void showEmotion() {
     }
 
     @FXML
@@ -91,11 +93,11 @@ public class Main extends Application {
     }
 
     @FXML
-    public void yes(int card){
+    public void yes(int card) {
 
-        if (card < 6){
+        if (card < 6) {
             lose();
-        } else{
+        } else {
             win();
         }//kalder Win hvis ens lykkekort er over 6
 
