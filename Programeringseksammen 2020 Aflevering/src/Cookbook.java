@@ -1,30 +1,55 @@
 enum recipies{
-    page1, page2
+    page1, page2, page3
 } //laver en enum der indenholder sider, som man kan slå op i.
 
 
 public class Cookbook {
     public static void main(String[] args) {
 
-        recipies lemonTea = recipies.page1; //sætter page1 til lemonTea (Citron tee)
+        recipies panGalacticGargleBlaster = recipies.page1; //sætter page1 til PanGalacticGargleBlaster (du bliver slået ud med en guldbar der har en citron viklet omkring)
         recipies glaze = recipies.page2; // sætter page2 til glaze (glassur)
+        recipies lemonTea = recipies.page3; //sætter page3 til lemonTea (citron tee)
 
-        showLemonTea(lemonTea); //kalder metoden showLemonTea() der viser hvordan man laver citron tee
+        showPggb(panGalacticGargleBlaster); //kalder metoden pGGb der viser hvordan man laver citron tee
         showGlaze(glaze); // det sammen som linje 12, bare med glaze.
+        showLemonTea(lemonTea); //det sammen som linje 12 bare med lemonTea
     }
 
-
     private static void showLemonTea(recipies lemonTea) {
-        System.out.println("------------------------------------------Lemon tea-------------------------------------------");
-        System.out.println("To make lemon tea, add a slice of lemon to your teacup and put boiling water in the teacup.");
-        System.out.println("If the lemon taste is to sour add sugar, or add less lemon next time");
+        System.out.println("------------------------------------------Lemon Tea-------------------------------------------");
+        System.out.println("""
+                you will need 1 cup water
+                2 teaspoons honey
+                1 teaspoon fresh lemon juice
+                1 teaspoon white sugar, or to taste\s""");
+        System.out.println("Pour water into a mug. Add honey and heat in the microwave for 1 minute and 30 seconds. Stir in lemon juice, mixing until honey is dissolved, then stir in the sugar.");
+        System.out.println("----------------------------------------------end---------------------------------------------");
+    }
+
+    private static void showPggb(recipies panGalacticGargleBlaster) {
+        System.out.println("------------------------Pan Galactic Gargle Blaster-------------------------------------------");
+        System.out.println("""
+                Take the juice from one bottle of Ol' Janx Spirit.
+                Pour into it one measure of water from the seas of Santraginus V — Oh, that Santraginean seawater! Oh, those Santraginean fish!
+                Allow three cubes of Arcturan Mega-gin to melt into the mixture (it must be properly iced or the benzene is lost).
+                Allow four litres of Fallian marsh gas to bubble through it, in memory of all those happy hikers who have died of pleasure in the Marshes of Fallia.
+                Over the back of a silver spoon float a measure of Qualactin Hypermint extract, redolent of all the heady odours of the dark Qualactin Zones, subtle, sweet and mystic.
+                Drop in the tooth of an Algolian Suntiger. Watch it dissolve, spreading the fires of the Algolian Suns deep into the heart of the drink.
+                Sprinkle Zamphuor.
+                Add an olive.
+                Drink... but... very carefully...""");
         System.out.println("----------------------------------------------end---------------------------------------------");
     }
 
     private static void showGlaze(recipies glaze){
         System.out.println("--------------------------------------------Glaze---------------------------------------------");
-        System.out.println("To make glaze, add powdered suger in a small bowl and add water, mix it with a spoon");
-        System.out.println("if to runny add more powdered sugar, if to chick add water");
+        System.out.println("""
+                You will need 1 ½ cups confectioners' sugar
+                2 ½ teaspoons milk
+                ⅛ teaspoon salt
+                ¼ teaspoon vanilla extract
+                1 teaspoon butter\s""");
+        System.out.println("Melt the butter and add to rest of ingredients. Mix until creamy.");
         System.out.println("----------------------------------------------end---------------------------------------------");
     }
 }
