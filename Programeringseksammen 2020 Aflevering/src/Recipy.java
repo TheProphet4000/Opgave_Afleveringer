@@ -1,5 +1,5 @@
 
-public class Recipy {
+public class Recipy { //en klasse der indenholder alle opskrifter i form af objects, som kan blive kaldt af klasser.
 
     public void showLemonTea() {
         System.out.println("------------------------------------------Lemon Tea-------------------------------------------");

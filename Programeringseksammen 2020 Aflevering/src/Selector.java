@@ -20,8 +20,8 @@ public class Selector{
         run();
     }
 
-    static void run(){
-        int page;
+    static void run(){ //køre programmet, og laver en arraylist der viser hvor mange opskrifter, der er
+        byte page; //en variable som kan holde en lille tal... i forhold til int
         ArrayList<String> latestRecipe = new ArrayList<>(3);
         latestRecipe.add(0," ");
         latestRecipe.add(1," ");
@@ -31,10 +31,10 @@ public class Selector{
         Scanner scan = new Scanner(System.in);
         System.out.println("What page will you lookup: (Type ( 1 ) if you want to open page one )");
 
-        try {
-            page = scan.nextInt();
+        try { //fanger småfejl brugeren kan lave
+            page = scan.nextByte();
 
-        switch (page) {
+        switch (page) { //en switch, som jeg bruger som en form af virtuelle sider, i en kogebog
             case 1 -> {
                 Recipy show = new Recipy();
                 show.showGlaze();
@@ -59,7 +59,7 @@ public class Selector{
 
                 run();
             }
-            default ->{
+            default ->{ //hvis brugeren vil have en side der ikke eksitere, fortæl dem det
                 System.out.println("This page doesn't exist, try a lower number..  ");
                 System.out.println(" ");
                 System.out.println(" ");
@@ -67,7 +67,7 @@ public class Selector{
             }
 
         }
-        }catch (Exception e) {
+        }catch (Exception e) { //hvis brugeren ikke skriver et nummer, fortæl dem det
             System.out.println("Type a number, not a letter... try again");
             System.out.println(" ");
             System.out.println(" ");
