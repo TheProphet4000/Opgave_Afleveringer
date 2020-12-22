@@ -1,5 +1,5 @@
 // 1.Variable (instansvariable, klassevariable)                                                                     DONE
-// 2.Klasser og objekter (constructors, getters & setters, enum, metoder)              enums
+// 2.Klasser og objekter (constructors, getters & setters, enum, metoder)              Mangler enums
 // 3.Nedarvning, interface                                                                                          DONE
 // 4.Kontrolstrukturer (if, switch & 2 slags løkker)                                   Mangler if
 // 5.Array og ArrayList                                                                                             DONE
