@@ -20,7 +20,7 @@ public class Test {
         boolean working = false;
         while (!working) { //laver et while loop, der stopper når testen er kørt eller working er sandt
             System.out.println("test 1: Show all recipes. there should be 3 recipies");
-            Recipy show = new Recipy();
+            Recipy show = new Recipy(); //er dette ikke en sætter.. jeg vil sige det er
             show.showLemonTea();
             show.showGlaze();
             show.showPggb();
