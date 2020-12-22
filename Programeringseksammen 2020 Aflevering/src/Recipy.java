@@ -1,18 +1,5 @@
 
 public class Recipy {
-    String name;
-    String ingredients;
-    String todo;
-    int page;
-
-    public Recipy (String name, String ingredients, String todo, int page) {
-        System.out.println("Constructing an Employee");
-        this.name = "CoockBook";
-        this.ingredients = "A book";
-        this.todo = "Open the Coockbook";
-        this.page = 0;
-    }
-
 
     public void showLemonTea() {
         System.out.println("------------------------------------------Lemon Tea-------------------------------------------");
