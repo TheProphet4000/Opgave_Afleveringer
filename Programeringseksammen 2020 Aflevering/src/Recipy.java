@@ -1,21 +1,20 @@
-enum recipies{
-    page1, page2, page3
-} //laver en enum der indenholder sider, som man kan slå op i.
 
+public class Recipy {
+    String name;
+    String ingredients;
+    String todo;
+    int page;
 
-public class Cookbook {
-    public static void main(String[] args) {
-
-        recipies panGalacticGargleBlaster = recipies.page1; //sætter page1 til PanGalacticGargleBlaster (du bliver slået ud med en guldbar der har en citron viklet omkring)
-        recipies glaze = recipies.page2; // sætter page2 til glaze (glassur)
-        recipies lemonTea = recipies.page3; //sætter page3 til lemonTea (citron tee)
-
-        showPggb(panGalacticGargleBlaster); //kalder metoden pGGb der viser hvordan man laver citron tee
-        showGlaze(glaze); // det sammen som linje 12, bare med glaze.
-        showLemonTea(lemonTea); //det sammen som linje 12 bare med lemonTea
+    public Recipy (String name, String ingredients, String todo, int page) {
+        System.out.println("Constructing an Employee");
+        this.name = "CoockBook";
+        this.ingredients = "A book";
+        this.todo = "Open the Coockbook";
+        this.page = 0;
     }
 
-    private static void showLemonTea(recipies lemonTea) {
+
+    public void showLemonTea() {
         System.out.println("------------------------------------------Lemon Tea-------------------------------------------");
         System.out.println("""
                 you will need 1 cup water
@@ -26,7 +25,7 @@ public class Cookbook {
         System.out.println("----------------------------------------------end---------------------------------------------");
     }
 
-    private static void showPggb(recipies panGalacticGargleBlaster) {
+    public void showPggb() {
         System.out.println("------------------------Pan Galactic Gargle Blaster-------------------------------------------");
         System.out.println("""
                 Take the juice from one bottle of Ol' Janx Spirit.
@@ -41,7 +40,7 @@ public class Cookbook {
         System.out.println("----------------------------------------------end---------------------------------------------");
     }
 
-    private static void showGlaze(recipies glaze){
+    public void showGlaze() {
         System.out.println("--------------------------------------------Glaze---------------------------------------------");
         System.out.println("""
                 You will need 1 ½ cups confectioners' sugar
