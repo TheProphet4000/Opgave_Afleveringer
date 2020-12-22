@@ -1,14 +1,14 @@
-// 1.Variable (instansvariable, klassevariable)
-// 2.Klasser og objekter (constructors, getters & setters, enum, metoder)            Contructors, getters, setters, metoder DONE
-// 3.Nedarvning, interface                                                                                        Nedarving DONE
-// 4.Kontrolstrukturer (if, switch & 2 slags løkker)                                                                 Switch DONE
-// 5.Array og ArrayList
-// 6.Exceptions (try/catch)
-// 7.GUI
-// 8.Persistens (gemme i- / læse fra en fil)
-// 9.Unit test (jUnit assertions)
-// 10.Algoritmer: Eksempel på søgning eller sortering
-// 11.Dokumentation og versionsstyring                                                                              GitHub DONE
+// 1.Variable (instansvariable, klassevariable)                                                                     DONE
+// 2.Klasser og objekter (constructors, getters & setters, enum, metoder)              Mangler setters, og enum
+// 3.Nedarvning, interface                                                                                          DONE
+// 4.Kontrolstrukturer (if, switch & 2 slags løkker)                                   Mangler if, while, for
+// 5.Array og ArrayList                                                                Mangler Array, Arraylist
+// 6.Exceptions (try/catch)                                                            Mangler try/catch
+// 7.GUI                                                                               Mangler GUI
+// 8.Persistens (gemme i- / læse fra en fil)                                           Mangler save/load
+// 9.Unit test (jUnit assertions)                                                      Mangler Tests
+// 10.Algoritmer: Eksempel på søgning eller sortering                                  Mangler sortering
+// 11.Dokumentation og versionsstyring                                                                              DONE
 
 import java.util.Scanner;
 
