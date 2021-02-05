@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="DBtestSQLite" uuid="fcc900c6-ae7d-43a3-821c-d9fb1901b2c1">
+    <data-source source="LOCAL" name="KogeBogDB" uuid="d2eabd3b-2af6-433d-85b4-02f37607b76b">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
